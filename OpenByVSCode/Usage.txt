@@ -1,0 +1,32 @@
+﻿Usage:
+
+    OpenByVSCode [OPTIONS] paths...
+
+OPTIONS:
+
+    --vscode
+        code.exe path, default value is
+        "C:\Program Files (x86)\Microsoft VS Code\Code.exe"
+
+    --folders
+        these folders indicates the project root
+        defualt value is ".vscode, .git"
+        program searches them from current working directory up to the root.
+
+    --max-items
+        Max number of files to be opened, otherwise a message box popuped
+        defualt value is 5, min value is 2.
+
+    --project
+        Specify the project root
+
+    These options and the long options of code.exe could be specified in
+    OpenByVSCode.ini that is together with OpenByVSCode.exe.
+
+EXAMPLES:
+
+    OpenByVSCode --folders="node_modules" main.js
+
+ReadMe:
+
+    https://github.com/yanxyz/OpenByVSCode#readme
